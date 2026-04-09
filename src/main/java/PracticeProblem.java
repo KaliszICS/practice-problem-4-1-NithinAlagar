@@ -31,6 +31,9 @@ public class PracticeProblem {
 		//Write question 5 code here
 	}
 	public static String seriesInclusive(int num){
+		if (num <= 0){
+			return "";
+		}
         String result = "1";
 		int i = 1;
 		while (i<num){
@@ -40,7 +43,10 @@ public class PracticeProblem {
 		return result;
 	}
 
-	public static seriesExclusive(Int num){
+	public static String seriesExclusive(int num){
+		if (num<=0){
+			return "";
+		}
 		String result = "0";
 		int i = 0;
 		while (i<num-1){
